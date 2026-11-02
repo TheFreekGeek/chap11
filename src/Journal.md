@@ -6,3 +6,6 @@ Added sort capability. Added some formatting to the toString. A natural order so
 
 Phase 3
 Using Comparator lets you select custom sorting, beyond defaults. Use this when you want to select customer criteria. It took me a little bit to figure out a way to reverse it. I ended up using Collections.reverse after Collections.sort.
+
+Phase 4
+I did an if statement sorting speed. Then for the else I did an if statement sorting compatibility. Then lastly a compareTo on name. The logic works out to if speed matches go to compatibility. If that matches as well go to name.

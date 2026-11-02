@@ -13,10 +13,7 @@ public class NeuralMod implements Comparable<NeuralMod> {
 
     @Override
     public String toString() {
-        return "ModName= " + name + System.lineSeparator() +
-                "ProcSpeed " + ProcSpeed + System.lineSeparator() +
-                "CompRating " + CompRating + System.lineSeparator() +
-                " ";
+        return "Name: " + name + ", ProcSpeed: " + ProcSpeed + ", CompRating: " + CompRating;
     }
 
     @Override
@@ -28,7 +25,15 @@ public class NeuralMod implements Comparable<NeuralMod> {
             return -1;
         }
         else {
-            return 0;
+            if(this.CompRating > o.CompRating) {
+                return 1;
+            }
+            else if(o.CompRating > this.CompRating) {
+                return -1;
+            }
+            else {
+                return this.name.compareTo(o.name);
+            }
         }
     }
 

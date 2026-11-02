@@ -32,4 +32,15 @@ public class NeuralMod implements Comparable<NeuralMod> {
         }
     }
 
+    public Integer getCompRating() {
+        return CompRating;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public double getProcSpeed() {
+        return ProcSpeed;
+    }
 }

@@ -3,3 +3,6 @@ Created class for the mods. Created an array list to hold list of mods. Added to
 
 Phase 2
 Added sort capability. Added some formatting to the toString. A natural order sorts based on standard terms and places the items in an automatic order. The comparable interface adds the code needed to sort items, other than objects, based on standard criteria.
+
+Phase 3
+Using Comparator lets you select custom sorting, beyond defaults. Use this when you want to select customer criteria. It took me a little bit to figure out a way to reverse it. I ended up using Collections.reverse after Collections.sort.
